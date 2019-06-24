@@ -13,7 +13,8 @@ class About extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center">
-                                <h1 style={{ paddingTop: '20%', paddingBottom: '20%', color: '#f5f5f5' }}> เกี่ยวกับเรา</h1>
+                                <h1 style={{ paddingTop: '110px', paddingBottom: '20%', color: '#f5f5f5' }}> 
+                                เกี่ยวกับเรา</h1>
                             </div>
                         </div>
                     </div>

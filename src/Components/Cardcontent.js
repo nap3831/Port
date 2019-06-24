@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Container
+    CardTitle, CardSubtitle
 } from 'reactstrap';
 import { NavLink, Link } from 'react-router-dom';
 class Cardcontent extends Component {
     render() {
-        let { title, sTitle, Text, imgSrc } = this.props;
+        let { title, sTitle, Text } = this.props;
         return (
             <div className="col-md-4 col-sm-6 col-12">
                 <div className="wrap-card-img my-5">
