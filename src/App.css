@@ -4,12 +4,16 @@ Footer
 Carousel
 Article
  */
+ @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 
-body{ 
+  body { 
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, #430089,#82ffa1); 
-  
+  background-image: linear-gradient(to right, #430089,#82ffa1);   
+  }
+  body , div * {
+    font-family: 'Prompt', sans-serif;
+
   }
   /* Navbar */
   /* .alpha{
@@ -81,6 +85,7 @@ body{
     margin-left: -50px;
     background: #fff;
   }
+
   .wrapper-card-img{
     position: relative; 
     /* ไม่กระโดด */
@@ -234,4 +239,3 @@ body{
   }
 }
 
-/* set Font-Awesome*/

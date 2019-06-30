@@ -6,32 +6,32 @@ import {
 import { NavLink, Link } from 'react-router-dom';
 class Cardcontent extends Component {
     render() {
-        let { title, sTitle, Text } = this.props;
+        let { title, sTitle, text, imgSrc, id_detial } = this.props;
         return (
-            <div className="col-md-4 col-sm-6 col-12">
-                <div className="wrap-card-img my-5">
+
+            <div className="col-lg-4 col-12">
+                <div className="wrap-card-img my-5" >
                     <div className="shadows">
                         <Card>
-                            <NavLink className="wrapper-card-img" to="/Portdetail">
-                                <CardImg className="card-img-top text-center" src="https://miro.medium.com/max/945/0*X0IbmZdrmjAQB_SF.jpg" alt="Card image cap" />
+                            <NavLink className="wrapper-card-img " to={`PortfolioDetail/${id_detial}`}>
+                                <CardImg className="card-img-top text-center" src={imgSrc} alt="Card image cap" />
                             </NavLink>
-                            <CardBody className="text-center">
-                                <CardTitle>{title}
-                                What is Lorem Ipsum?
+                            <CardBody className="text-center" style={{height: '20vh'}}> 
+                                <CardTitle className="text-center">
+                                    <h2>
+                                        {title}
+                                    </h2>
                                 </CardTitle>
-                                <CardSubtitle>
+                                <hr />
+                                <CardSubtitle className="my-3">
                                     {sTitle}
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </CardSubtitle>
-                                <CardText>
-                                    {Text}
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                </CardText>
-                                <Link className=" btn btn-primary w-100" to="/Portdetail">
-                                    อ่านต่อ
-                                </Link>
                             </CardBody>
-
+                                <div className="my-5"  style={{ textAlign: 'center' }}>
+                                    <Link className=" btn btn-primary w-50 " to={`PortfolioDetail/${id_detial}`}>
+                                        อ่านต่อ
+                                </Link>
+                                </div>
                         </Card>
                     </div>
                 </div>
