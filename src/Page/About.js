@@ -5,16 +5,16 @@ class About extends Component {
     render() {
         return (
             <div>
-                <div className="img-responsive " style={{
-                    backgroundImage: `url(${Banner})`, width: '100%', backgroundAttachment: 'fixed',
+                <div className="img-responsive d-block" style={{
+                    backgroundImage: `url(${Banner})`, paddingTop: '80px', paddingBottom: '80px', width: '100%', backgroundAttachment: 'fixed',
                     backgroundPosition: 'center',
                     backgroundSize: 'cover'
                 }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center">
-                                <h1 style={{ paddingTop: '110px', paddingBottom: '20%', color: '#f5f5f5' }}> 
-                                เกี่ยวกับเรา</h1>
+                                <h1 style={{ paddingTop: '110px', paddingBottom: '20%', color: '#f5f5f5' }}>
+                                    เกี่ยวกับเรา</h1>
                             </div>
                         </div>
                     </div>

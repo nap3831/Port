@@ -16,10 +16,7 @@ Article
 
   }
   /* Navbar */
-  /* .alpha{
-    background-image: linear-gradient(90deg,#0095ffa6, #000000);
-    color: white;
-  } */
+
   .navbarLink{
     padding-right: .5rem; 
     padding-left: .5rem; 
@@ -32,8 +29,8 @@ Article
   .navbarLink a:hover{
     text-decoration: none;
     color: white;
-    transition: 0.5s;
-    border: 2px solid #fff;
+    transition: 0.3s;
+    border-bottom: 2px solid #fff;
   }
   /* Footer */
   .fluid {

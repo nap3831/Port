@@ -7,7 +7,7 @@ class Navigation extends Component {
         this.state = {
             isOpen: false,
             scrolling: false,
-            scrollYAxis: 0
+            scrollYAxis: 20
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.closeNav = this.closeNav.bind(this);
@@ -35,18 +35,19 @@ class Navigation extends Component {
     handleScroll() {
         if (window.scrollY === 0 && this.state.scrolling === true) {
             this.setState({ scrolling: false });
-            this.setState({ scrollYAxis: this.state.scrollYAxis + 25 });
+            this.setState({ scrollYAxis: this.state.scrollYAxis + 30 });
 
         }
         else if (window.scrollY !== 0 && this.state.scrolling !== true) {
             this.setState({ scrolling: true });
-            this.setState({ scrollYAxis: this.state.scrollYAxis * 0  + 5});
+            this.setState({ scrollYAxis: this.state.scrollYAxis * 0  + 10});
         }
     }
 
     render() {
         let alpha = {
-            background: 'linear-gradient(90deg, #0095ffa6, #000000)'
+            // background: 'linear-gradient(90deg, #0095ffa6, #000000)'
+            background:'rgba(0,0,0,0.5)'
             , color: '#ffffff', paddingTop: `${this.state.scrollYAxis}px`, paddingBottom: `${this.state.scrollYAxis}px`
             ,transition:'.5s'
         }

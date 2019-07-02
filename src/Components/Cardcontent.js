@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import {
-    Card, CardImg, CardText, CardBody,
+    Card, CardImg, CardBody,
     CardTitle, CardSubtitle
 } from 'reactstrap';
 import { NavLink, Link } from 'react-router-dom';
 class Cardcontent extends Component {
     render() {
-        let { title, sTitle, text, imgSrc, id_detial } = this.props;
+        let { title, sTitle, imgSrc, id_detial } = this.props;
         return (
 
             <div className="col-lg-4 col-12">
@@ -27,8 +27,8 @@ class Cardcontent extends Component {
                                     {sTitle}
                                 </CardSubtitle>
                             </CardBody>
-                                <div className="my-5"  style={{ textAlign: 'center' }}>
-                                    <Link className=" btn btn-primary w-50 " to={`PortfolioDetail/${id_detial}`}>
+                                <div  style={{marginTop:'80px',marginBottom:'80px',marginLeft:'100px',marginRight:'100px' }}>
+                                    <Link className=" btn btn-primary text-center w-100" to={`PortfolioDetail/${id_detial}`}>
                                         อ่านต่อ
                                 </Link>
                                 </div>
