@@ -31,7 +31,7 @@ class Portfolio extends Component {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h1 style={{ paddingTop: '110px', paddingBottom: '20%', color: '#f5f5f5' }}>
-                                    ผลงานของฉัน</h1>
+                                    ผลงาน</h1>
                             </div>
                         </div>
                     </div>

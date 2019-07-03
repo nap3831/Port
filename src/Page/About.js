@@ -18,7 +18,6 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-                    {/* TimeLine */}
                 </div>
                 <Timeline />
             </div >
